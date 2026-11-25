@@ -1,0 +1,71 @@
+{
+    "version": 6,
+    "configurePresets": [
+      {
+        "name": "gcc-debug",
+        "displayName": "GCC Debug",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/gcc-debug",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        }
+      },
+      {
+        "name": "clang-debug",
+        "displayName": "Clang Debug",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/clang-debug",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "clang",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        }
+      },
+      {
+        "name": "asan-ubsan",
+        "displayName": "Clang Debug + ASan + UBSan",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/asan-ubsan",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "clang",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+          "CMAKE_C_FLAGS_DEBUG": "-O0 -g -fsanitize=address,undefined -fno-omit-frame-pointer"
+        }
+      },
+      {
+        "name": "syno-cedarview-release",
+        "displayName": "Synology Cedarview Release",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/syno-cedarview-release",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_C_COMPILER": "/opt/syno/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-gcc",
+          "CMAKE_C_FLAGS": "-O2 -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64",
+          "CMAKE_SYSTEM_NAME": "Linux",
+          "CMAKE_SYSTEM_PROCESSOR": "x86_64",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        }
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "gcc-debug",
+        "configurePreset": "gcc-debug"
+      },
+      {
+        "name": "clang-debug",
+        "configurePreset": "clang-debug"
+      },
+      {
+        "name": "asan-ubsan",
+        "configurePreset": "asan-ubsan"
+      },
+      {
+        "name": "syno-cedarview-release",
+        "configurePreset": "syno-cedarview-release"
+      }
+    ]
+  }

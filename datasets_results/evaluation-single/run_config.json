@@ -1,0 +1,15 @@
+{
+  "completed_at_utc": "2026-09-05T13:01:40.924706Z",
+  "dataset_root": "BTRFS_EVAL_evaluation-single",
+  "event_record_count": 8300,
+  "expected_version_count": 6100,
+  "final_live_object_count": 0,
+  "historical_object_count": 2500,
+  "program_version": "2.0.1",
+  "results_dir": "datasets_results/evaluation-single",
+  "run_id": "evaluation-single",
+  "scenario_case_count": 2000,
+  "schema_version": "2.0",
+  "source_dir": "source-set",
+  "status": "completed"
+}

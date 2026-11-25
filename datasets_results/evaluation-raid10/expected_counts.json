@@ -1,0 +1,124 @@
+{
+  "event_occurrence_counts": {
+    "chain1": {
+      "create": 300,
+      "delete": 300,
+      "modify_content_range": 300,
+      "move_occurrence_1": 300,
+      "rename_occurrence_1": 300
+    },
+    "chain2": {
+      "copy": 200,
+      "create": 200,
+      "delete": 400,
+      "modify_content_range": 200,
+      "modify_size_class_change": 200,
+      "rename_occurrence_1": 200
+    },
+    "create": {
+      "create": 300,
+      "delete": 300
+    },
+    "modify": {
+      "create": 300,
+      "delete": 300,
+      "modify_content_range": 300
+    },
+    "move": {
+      "create": 300,
+      "delete": 300,
+      "move_occurrence_1": 300,
+      "move_occurrence_2": 300,
+      "move_occurrence_3": 300
+    },
+    "overwrite": {
+      "create": 300,
+      "delete": 300,
+      "overwrite": 300
+    },
+    "rename": {
+      "create": 300,
+      "delete": 300,
+      "rename_occurrence_1": 300,
+      "rename_occurrence_2": 300,
+      "rename_occurrence_3": 300
+    }
+  },
+  "expected_version_counts": {
+    "chain1": {
+      "inline": 400,
+      "over_chunk": 400,
+      "under_chunk": 400
+    },
+    "chain2": {
+      "inline_to_under": 250,
+      "over_to_under": 250,
+      "under_to_inline": 250,
+      "under_to_over": 250
+    },
+    "create": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    },
+    "modify": {
+      "inline": 200,
+      "over_chunk": 200,
+      "under_chunk": 200
+    },
+    "move": {
+      "inline": 400,
+      "over_chunk": 400,
+      "under_chunk": 400
+    },
+    "overwrite": {
+      "inline": 200,
+      "over_chunk": 200,
+      "under_chunk": 200
+    },
+    "rename": {
+      "inline": 400,
+      "over_chunk": 400,
+      "under_chunk": 400
+    }
+  },
+  "scenario_case_counts": {
+    "chain1": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    },
+    "chain2": {
+      "inline_to_under": 50,
+      "over_to_under": 50,
+      "under_to_inline": 50,
+      "under_to_over": 50
+    },
+    "create": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    },
+    "modify": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    },
+    "move": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    },
+    "overwrite": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    },
+    "rename": {
+      "inline": 100,
+      "over_chunk": 100,
+      "under_chunk": 100
+    }
+  },
+  "schema_version": "2.0"
+}

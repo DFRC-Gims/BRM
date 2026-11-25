@@ -1,0 +1,15 @@
+{
+  "completed_at_utc": "2026-09-16T16:35:38.863266Z",
+  "dataset_root": "BTRFS_EVAL_evaluation-raid0",
+  "event_record_count": 8300,
+  "expected_version_count": 6100,
+  "final_live_object_count": 0,
+  "historical_object_count": 2500,
+  "program_version": "2.0.1",
+  "results_dir": "datasets_results/evaluation-raid0",
+  "run_id": "evaluation-raid0",
+  "scenario_case_count": 2000,
+  "schema_version": "2.0",
+  "source_dir": "source-set",
+  "status": "completed"
+}

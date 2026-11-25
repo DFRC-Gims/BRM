@@ -1,0 +1,233 @@
+[
+  {
+    "description": "pre-create all scenario directories",
+    "end_unix_ns": 1789372656009462247,
+    "end_utc": "2026-09-14T07:57:36.009471Z",
+    "event_count": 0,
+    "first_event_sequence": null,
+    "last_event_sequence": null,
+    "stage_id": "S00_PREPARE_DIRECTORIES",
+    "start_unix_ns": 1789372655005980091,
+    "start_utc": "2026-09-14T07:57:35.005962Z"
+  },
+  {
+    "description": "copy all initial scenario objects",
+    "end_unix_ns": 1789375573087846790,
+    "end_utc": "2026-09-14T08:46:13.087887Z",
+    "event_count": 2000,
+    "first_event_sequence": 1,
+    "last_event_sequence": 2000,
+    "stage_id": "S01_INITIAL_CREATE",
+    "start_unix_ns": 1789372656009502253,
+    "start_utc": "2026-09-14T07:57:36.009500Z"
+  },
+  {
+    "description": "modify modify, chain1, and chain2 originals",
+    "end_unix_ns": 1789376346663258933,
+    "end_utc": "2026-09-14T08:59:06.663270Z",
+    "event_count": 800,
+    "first_event_sequence": 2001,
+    "last_event_sequence": 2800,
+    "stage_id": "S02_INITIAL_MODIFY",
+    "start_unix_ns": 1789375573087965643,
+    "start_utc": "2026-09-14T08:46:13.087955Z"
+  },
+  {
+    "description": "rename scenario occurrence 1",
+    "end_unix_ns": 1789376347811868265,
+    "end_utc": "2026-09-14T08:59:07.811876Z",
+    "event_count": 300,
+    "first_event_sequence": 2801,
+    "last_event_sequence": 3100,
+    "stage_id": "S03_RENAME_1",
+    "start_unix_ns": 1789376346663306540,
+    "start_utc": "2026-09-14T08:59:06.663305Z"
+  },
+  {
+    "description": "move scenario occurrence 1",
+    "end_unix_ns": 1789376348852850119,
+    "end_utc": "2026-09-14T08:59:08.852859Z",
+    "event_count": 300,
+    "first_event_sequence": 3101,
+    "last_event_sequence": 3400,
+    "stage_id": "S04_MOVE_1",
+    "start_unix_ns": 1789376347811907133,
+    "start_utc": "2026-09-14T08:59:07.811905Z"
+  },
+  {
+    "description": "delete create scenario objects",
+    "end_unix_ns": 1789376350957783824,
+    "end_utc": "2026-09-14T08:59:10.957792Z",
+    "event_count": 300,
+    "first_event_sequence": 3401,
+    "last_event_sequence": 3700,
+    "stage_id": "S05_CREATE_DELETE",
+    "start_unix_ns": 1789376348852936139,
+    "start_utc": "2026-09-14T08:59:08.852931Z"
+  },
+  {
+    "description": "replace incoming objects with external targets",
+    "end_unix_ns": 1789376785369180081,
+    "end_utc": "2026-09-14T09:06:25.369188Z",
+    "event_count": 300,
+    "first_event_sequence": 3701,
+    "last_event_sequence": 4000,
+    "stage_id": "S06_OVERWRITE",
+    "start_unix_ns": 1789376350957844969,
+    "start_utc": "2026-09-14T08:59:10.957842Z"
+  },
+  {
+    "description": "rename occurrence 2 and chain1 rename",
+    "end_unix_ns": 1789376786415654078,
+    "end_utc": "2026-09-14T09:06:26.415662Z",
+    "event_count": 600,
+    "first_event_sequence": 4001,
+    "last_event_sequence": 4600,
+    "stage_id": "S07_RENAME_2_CHAIN1_RENAME",
+    "start_unix_ns": 1789376785369215411,
+    "start_utc": "2026-09-14T09:06:25.369214Z"
+  },
+  {
+    "description": "copy modified chain2 originals",
+    "end_unix_ns": 1789376787612668626,
+    "end_utc": "2026-09-14T09:06:27.612682Z",
+    "event_count": 200,
+    "first_event_sequence": 4601,
+    "last_event_sequence": 4800,
+    "stage_id": "S08_CHAIN2_COPY",
+    "start_unix_ns": 1789376786415689386,
+    "start_utc": "2026-09-14T09:06:26.415687Z"
+  },
+  {
+    "description": "delete chain2 originals",
+    "end_unix_ns": 1789376788724196292,
+    "end_utc": "2026-09-14T09:06:28.724205Z",
+    "event_count": 200,
+    "first_event_sequence": 4801,
+    "last_event_sequence": 5000,
+    "stage_id": "S09_CHAIN2_ORIGINAL_DELETE",
+    "start_unix_ns": 1789376787612715455,
+    "start_utc": "2026-09-14T09:06:27.612713Z"
+  },
+  {
+    "description": "move occurrence 2 and chain1 move",
+    "end_unix_ns": 1789376789755058475,
+    "end_utc": "2026-09-14T09:06:29.755066Z",
+    "event_count": 600,
+    "first_event_sequence": 5001,
+    "last_event_sequence": 5600,
+    "stage_id": "S10_MOVE_2_CHAIN1_MOVE",
+    "start_unix_ns": 1789376788724239466,
+    "start_utc": "2026-09-14T09:06:28.724237Z"
+  },
+  {
+    "description": "delete modify scenario objects",
+    "end_unix_ns": 1789376791160705864,
+    "end_utc": "2026-09-14T09:06:31.160719Z",
+    "event_count": 300,
+    "first_event_sequence": 5601,
+    "last_event_sequence": 5900,
+    "stage_id": "S11_MODIFY_DELETE",
+    "start_unix_ns": 1789376789755095717,
+    "start_utc": "2026-09-14T09:06:29.755094Z"
+  },
+  {
+    "description": "rename chain2 copies",
+    "end_unix_ns": 1789376792174609925,
+    "end_utc": "2026-09-14T09:06:32.174619Z",
+    "event_count": 200,
+    "first_event_sequence": 5901,
+    "last_event_sequence": 6100,
+    "stage_id": "S12_CHAIN2_COPY_RENAME",
+    "start_unix_ns": 1789376791160751184,
+    "start_utc": "2026-09-14T09:06:31.160749Z"
+  },
+  {
+    "description": "rename scenario occurrence 3",
+    "end_unix_ns": 1789376793201501033,
+    "end_utc": "2026-09-14T09:06:33.201509Z",
+    "event_count": 300,
+    "first_event_sequence": 6101,
+    "last_event_sequence": 6400,
+    "stage_id": "S13_RENAME_3",
+    "start_unix_ns": 1789376792174647145,
+    "start_utc": "2026-09-14T09:06:32.174645Z"
+  },
+  {
+    "description": "resize chain2 copies in place",
+    "end_unix_ns": 1789376933880125430,
+    "end_utc": "2026-09-14T09:08:53.880134Z",
+    "event_count": 200,
+    "first_event_sequence": 6401,
+    "last_event_sequence": 6600,
+    "stage_id": "S14_CHAIN2_SIZE_CLASS_CHANGE",
+    "start_unix_ns": 1789376793201538920,
+    "start_utc": "2026-09-14T09:06:33.201537Z"
+  },
+  {
+    "description": "delete overwrite target objects",
+    "end_unix_ns": 1789376935407336846,
+    "end_utc": "2026-09-14T09:08:55.407352Z",
+    "event_count": 300,
+    "first_event_sequence": 6601,
+    "last_event_sequence": 6900,
+    "stage_id": "S15_OVERWRITE_TARGET_DELETE",
+    "start_unix_ns": 1789376933880162150,
+    "start_utc": "2026-09-14T09:08:53.880160Z"
+  },
+  {
+    "description": "move scenario occurrence 3",
+    "end_unix_ns": 1789376936446638717,
+    "end_utc": "2026-09-14T09:08:56.446648Z",
+    "event_count": 300,
+    "first_event_sequence": 6901,
+    "last_event_sequence": 7200,
+    "stage_id": "S16_MOVE_3",
+    "start_unix_ns": 1789376935407399178,
+    "start_utc": "2026-09-14T09:08:55.407397Z"
+  },
+  {
+    "description": "delete chain1 objects",
+    "end_unix_ns": 1789376937717859991,
+    "end_utc": "2026-09-14T09:08:57.717872Z",
+    "event_count": 300,
+    "first_event_sequence": 7201,
+    "last_event_sequence": 7500,
+    "stage_id": "S17_CHAIN1_DELETE",
+    "start_unix_ns": 1789376936446692036,
+    "start_utc": "2026-09-14T09:08:56.446689Z"
+  },
+  {
+    "description": "delete rename scenario objects",
+    "end_unix_ns": 1789376939173541553,
+    "end_utc": "2026-09-14T09:08:59.173551Z",
+    "event_count": 300,
+    "first_event_sequence": 7501,
+    "last_event_sequence": 7800,
+    "stage_id": "S18_RENAME_DELETE",
+    "start_unix_ns": 1789376937717965018,
+    "start_utc": "2026-09-14T09:08:57.717962Z"
+  },
+  {
+    "description": "delete move scenario objects",
+    "end_unix_ns": 1789376940560371088,
+    "end_utc": "2026-09-14T09:09:00.560379Z",
+    "event_count": 300,
+    "first_event_sequence": 7801,
+    "last_event_sequence": 8100,
+    "stage_id": "S19_MOVE_DELETE",
+    "start_unix_ns": 1789376939173585125,
+    "start_utc": "2026-09-14T09:08:59.173582Z"
+  },
+  {
+    "description": "delete resized chain2 copies",
+    "end_unix_ns": 1789376942189620717,
+    "end_utc": "2026-09-14T09:09:02.189629Z",
+    "event_count": 200,
+    "first_event_sequence": 8101,
+    "last_event_sequence": 8300,
+    "stage_id": "S20_CHAIN2_COPY_DELETE",
+    "start_unix_ns": 1789376940560413525,
+    "start_utc": "2026-09-14T09:09:00.560412Z"
+  }
+]
